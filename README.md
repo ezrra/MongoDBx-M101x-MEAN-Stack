@@ -10,9 +10,9 @@ What you'll learn
 
 Schedule
 
-PART 1: Introduction to MongoDB and NodeJS
-PART 2: MongoDB Schema Design
-PART 3: NodeJS REST APIs with Express
-PART 4: Build an AngularJS Client
-PART 5: Hybrid mobile apps with Ionic
+- PART 1: Introduction to MongoDB and NodeJS
+- PART 2: MongoDB Schema Design
+- PART 3: NodeJS REST APIs with Express
+- PART 4: Build an AngularJS Client
+- PART 5: Hybrid mobile apps with Ionic
 
