@@ -10,7 +10,7 @@ db.collection('movies').find({ director: 'George Lucas' }, function(error, docs)
 });
 ```
 
-X - B 
+X B 
 ```
 db.collection('movies').find({ director: 'George Lucas' }).toArray(function(error, docs) {
   console.log(docs);

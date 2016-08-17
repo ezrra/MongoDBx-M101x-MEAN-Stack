@@ -4,4 +4,4 @@ Which of the following is not a valid way to export a function from a NodeJS fil
 
 - exports.fn = function () {};
 
-X - exports = function () {};
+X exports = function () {};

@@ -2,5 +2,5 @@
 
 - /usr/local/nodepath
 - /etc/node
-X - ./node_modules
+X ./node_modules
 - ./.npm

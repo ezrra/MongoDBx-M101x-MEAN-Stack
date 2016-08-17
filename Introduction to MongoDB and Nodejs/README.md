@@ -27,3 +27,26 @@ Node.js uses file level scoping. This means that by default, any variable or fun
 
 Node.js has a global object, but using it is almost always a mistake.
 The require function is the preferred way to shar code between files.
+
+## Using mocha for testing
+In particular, Mocha is the most popular testing framework for Node.js
+
+Mocha uses behavior driven development or BDD for short syntax.
+
+BDD style is designed to read more like stories than tests.
+
+Mocha also has the ability to use different reporters for test output.
+Reporters control the format that your test results are output in.
+
+## package.json: npm run-script
+package.json thath defines two named scripts. The test script that run Mocha with the detault Spec Reporter.
+
+> npm test // package.json - scripts
+> npm run test-kitten
+> npm run test
+> npm install mocha -g
+
+## Runnign mocha tests with gulp
+
+Gulp starts and waits for a file to change. When it changes, it runs your test an d then it repots the results and goes back to waiting for more changes.
+
