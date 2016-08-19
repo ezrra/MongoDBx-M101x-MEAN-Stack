@@ -50,3 +50,5 @@ package.json thath defines two named scripts. The test script that run Mocha wit
 
 Gulp starts and waits for a file to change. When it changes, it runs your test an d then it repots the results and goes back to waiting for more changes.
 
+> ./node_modules/.bin/gulp test
+> npm run watch
