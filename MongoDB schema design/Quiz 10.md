@@ -9,7 +9,7 @@ var schema = new mongoose.Schema({
 
 Which of the following implementations of the handlePriceChange function would push any changes in the price field to the end of the priceHistory array?
 
-A:
+X A:
 ```
 function handlePrice (v) {
 	if (v !== this.price) {
