@@ -1,4 +1,5 @@
-function setupAuth(User, app) {
+// TODO: make setupAuth depend on the Config service...
+function setupAuth(User, app, Config) {
   var passport = require('passport');
   var FacebookStrategy = require('passport-facebook').Strategy;
 
@@ -16,12 +17,19 @@ function setupAuth(User, app) {
   // Facebook-specific
   passport.use(new FacebookStrategy(
     {
-      clientID: process.env.FACEBOOK_CLIENT_ID,
-      clientSecret: process.env.FACEBOOK_CLIENT_SECRET,
-      callbackURL: 'http://localhost:3000/auth/facebook/callback'
+      // TODO: and use the Config service here
+      
+      // clientID: process.env.FACEBOOK_CLIENT_ID,
+      // clientSecret: process.env.FACEBOOK_CLIENT_SECRET,
+      
+      clientID: Config.facebookClientId,
+      clientSecret: Config.facebookClientSecret,
+
+      callbackURL: 'http://localhost:3000/auth/facebook/callback',
+      // Necessary for new version of Facebook graph API
+      profileFields: ['id', 'emails', 'name']
     },
     function(accessToken, refreshToken, profile, done) {
-      console.log(profile)
       if (!profile.emails || !profile.emails.length) {
         return done('No emails associated with this account!');
       }

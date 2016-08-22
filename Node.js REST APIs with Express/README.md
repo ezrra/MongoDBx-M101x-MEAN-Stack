@@ -27,4 +27,22 @@ HTTP-Status has a map of readable strings to HTTP status codes.
 
 ## User and Cart APIs
 
-## 
+## Integrating Facebook OAuth
+- How does a user register?
+- How does a user log in?
+- How do you track which user is logged in?
+
+## Integrating Stripe for payments
+
+## Integrating MongoDB Text Search
+
+## Integrating OpenExchangeRates
+
+Change value of process.env
+
+$ PORT=123 node app.js
+
+or
+
+$ export PORT=123
+$ node app.js  
