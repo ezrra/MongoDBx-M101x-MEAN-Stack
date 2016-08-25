@@ -6,6 +6,6 @@ Which of the following is the build-in AngularJS directive for looping over an a
 
 - ngif
 
-- ngRepeat
+X ngRepeat
 
 - ngWhile
